@@ -40,7 +40,7 @@ __email__ = "pklesk@zut.edu.pl"
 # main settings
 STATE_CLASS = UTTT # C4 or Gomoku or UTTT
 N_GAMES = 10
-AI_A_SHORTNAME = None # human
+AI_A_SHORTNAME = "mcts_1_inf_vanilla" # human
 AI_B_SHORTNAME = "mctsnc_5_inf_4_256_acp_prodigal" 
 REPRODUCE_EXPERIMENT = False
 
