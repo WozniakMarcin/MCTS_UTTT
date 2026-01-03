@@ -130,7 +130,7 @@ class GameRunner:
                     move_index = self.white_ai.run(game, forced_search_steps_limit)
                 move_name = self.game_class.action_index_to_name(move_index)
                 print(f"MOVE PLAYED: {move_name} (index={move_index})")
-                game_moved = game.take_action(move_index)
+                game = game.take_action(move_index)
                 moves_round_info["white_best_action_info"] = self.white_ai.actions_info["best"]            
                 moves_round_info["white_performance_info"] = self.white_ai.performance_info
 
