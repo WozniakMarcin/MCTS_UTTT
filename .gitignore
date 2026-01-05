@@ -325,4 +325,3 @@ sympy-plots-for-*.tex/
 .project
 .pydevproject
 src/__pycache__extras/
-experiments/

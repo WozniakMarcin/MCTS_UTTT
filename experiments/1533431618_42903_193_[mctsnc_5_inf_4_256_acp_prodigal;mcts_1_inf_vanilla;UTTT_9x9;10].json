@@ -1,0 +1,1056 @@
+{
+  "matchup_info": {
+    "ai_a_shortname": "mctsnc_5_inf_4_256_acp_prodigal",
+    "ai_a_instance": "MCTSNC(search_time_limit=5.0, search_steps_limit=inf, n_trees=4, n_playouts=256, variant='acp_prodigal', device_memory=2.0, ucb_c=2.0, seed: 0)",
+    "ai_b_shortname": "mcts_1_inf_vanilla",
+    "ai_b_instance": "MCTS(search_time_limit=1.0, search_steps_limit=inf, vanilla=True, ucb_c=2.0, seed: 0)",
+    "game_name": "UTTT_9x9",
+    "n_games": 10
+  },
+  "cpu_and_system_props": {
+    "cpu_name": "12th Gen Intel(R) Core(TM) i5-12500H",
+    "ram_size": "31.7 GB",
+    "os_name": "Windows 11",
+    "os_version": "10.0.26200",
+    "os_machine": "AMD64"
+  },
+  "gpu_props": {
+    "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "max_threads_per_block": 1024,
+    "max_block_dim_x": 1024,
+    "max_block_dim_y": 1024,
+    "max_block_dim_z": 64,
+    "max_grid_dim_x": 2147483647,
+    "max_grid_dim_y": 65535,
+    "max_grid_dim_z": 65535,
+    "max_shared_memory_per_block": 49152,
+    "async_engine_count": 1,
+    "can_map_host_memory": 1,
+    "multiprocessor_count": 20,
+    "warp_size": 32,
+    "unified_addressing": 1,
+    "pci_bus_id": 1,
+    "pci_device_id": 0,
+    "compute_capability": [
+      8,
+      6
+    ],
+    "cores_per_SM": 128,
+    "cores_total": 2560
+  },
+  "games_infos": {
+    "1": {
+      "black": "MCTSNC(search_time_limit=5.0, search_steps_limit=inf, n_trees=4, n_playouts=256, variant='acp_prodigal', device_memory=2.0, ucb_c=2.0, seed: 0)",
+      "white": "MCTS(search_time_limit=1.0, search_steps_limit=inf, vanilla=True, ucb_c=2.0, seed: 0)",
+      "initial_state": "   A  B  C  D  E  F  G  H  I \n 9 *  *  *  *  *  *  *  *  * 9 \n 8 *  *  *  *  *  *  *  *  * 8 \n 7 *  *  *  *  *  *  *  *  * 7 \n 6 *  *  *  *  *  *  *  *  * 6 \n 5 *  *  *  *  *  *  *  *  * 5 \n 4 *  *  *  *  *  *  *  *  * 4 \n 3 *  *  *  *  *  *  *  *  * 3 \n 2 *  *  *  *  *  *  *  *  * 2 \n 1 *  *  *  *  *  *  *  *  * 1 \n   A  B  C  D  E  F  G  H  I ",
+      "moves_rounds": {
+        "1": {
+          "black_best_action_info": {
+            "index": 40,
+            "name": "E5",
+            "n_root": 31946496,
+            "win_flag": false,
+            "n": 20072960,
+            "n_wins": 6916244,
+            "q": 0.34455526240275475,
+            "ucb": 0.3464108898598677
+          },
+          "black_performance_info": {
+            "steps": 396,
+            "steps_per_second": 79.08160866805352,
+            "playouts": 31946496,
+            "playouts_per_second": 6379748.219665498,
+            "times_[ms]": {
+              "total": 5007.485389709473,
+              "loop": 5003.934621810913,
+              "reduce_over_trees": 1.081705093383789,
+              "reduce_over_actions": 1.155853271484375,
+              "mean_loop": 12.636198539926548,
+              "mean_select": 0.0870324144459734,
+              "mean_expand": 0.22961154128565933,
+              "mean_playout": 12.021342311242615,
+              "mean_backup": 0.28946483978117354
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 3.2101526503465685,
+              "max_depth": 4,
+              "mean_size": 31198.75,
+              "max_size": 31209
+            }
+          },
+          "white_best_action_info": {
+            "index": 32,
+            "name": "F4",
+            "n_root": 469,
+            "win_flag": false,
+            "n": 78,
+            "n_wins": 25,
+            "q": 0.32051282051282054,
+            "ucb": 0.8821314870357457
+          },
+          "white_performance_info": {
+            "steps": 469,
+            "steps_per_second": 468.5413230246689,
+            "playouts": 469,
+            "playouts_per_second": 468.5413230246689,
+            "times_[ms]": {
+              "total": 1000.978946685791,
+              "loop": 1000.8747577667236,
+              "reduce_over_actions": 0.03814697265625,
+              "mean_loop": 2.134061317199837,
+              "mean_select": 0.054258781709650684,
+              "mean_expand": 0.24663410715456965,
+              "mean_playout": 1.8300110343168539,
+              "mean_backup": 0.0016643548570970483
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 469,
+              "mean_depth": 3.817866864637466,
+              "max_depth": 5,
+              "size": 4041
+            }
+          }
+        },
+        "2": {
+          "black_best_action_info": {
+            "index": 16,
+            "name": "H2",
+            "n_root": 4282624,
+            "win_flag": false,
+            "n": 3146240,
+            "n_wins": 1426895,
+            "q": 0.45352388883238404,
+            "ucb": 0.45792999215860347
+          },
+          "black_performance_info": {
+            "steps": 1199,
+            "steps_per_second": 239.72426999622704,
+            "playouts": 4282624,
+            "playouts_per_second": 856254.305311361,
+            "times_[ms]": {
+              "total": 5001.579523086548,
+              "loop": 5000.314712524414,
+              "reduce_over_trees": 0.12612342834472656,
+              "reduce_over_actions": 0.33211708068847656,
+              "mean_loop": 4.170404263990337,
+              "mean_select": 0.09225446845811043,
+              "mean_expand": 0.21272544765392873,
+              "mean_playout": 3.657628537417452,
+              "mean_backup": 0.20318512522846188
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.769153963921986,
+              "max_depth": 9,
+              "mean_size": 3755.75,
+              "max_size": 4036
+            }
+          },
+          "white_best_action_info": {
+            "index": 31,
+            "name": "E4",
+            "n_root": 494,
+            "win_flag": false,
+            "n": 84,
+            "n_wins": 27,
+            "q": 0.32142857142857145,
+            "ucb": 0.8648978292084444
+          },
+          "white_performance_info": {
+            "steps": 494,
+            "steps_per_second": 493.8164511091044,
+            "playouts": 494,
+            "playouts_per_second": 493.8164511091044,
+            "times_[ms]": {
+              "total": 1000.3716945648193,
+              "loop": 1000.2834796905518,
+              "reduce_over_actions": 0.033855438232421875,
+              "mean_loop": 2.024865343503141,
+              "mean_select": 0.05660317687370516,
+              "mean_expand": 0.23877717222762013,
+              "mean_playout": 1.725943947610585,
+              "mean_backup": 0.001705609835111178
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 494,
+              "mean_depth": 3.9016078713702904,
+              "max_depth": 5,
+              "size": 4167
+            }
+          }
+        },
+        "3": {
+          "black_best_action_info": {
+            "index": 13,
+            "name": "E2",
+            "n_root": 5668096,
+            "win_flag": false,
+            "n": 3592960,
+            "n_wins": 1258152,
+            "q": 0.3501714463840399,
+            "ucb": 0.35433221995012065
+          },
+          "black_performance_info": {
+            "steps": 1162,
+            "steps_per_second": 232.19275779531418,
+            "playouts": 5668096,
+            "playouts_per_second": 1132608.297494483,
+            "times_[ms]": {
+              "total": 5004.462718963623,
+              "loop": 5002.781867980957,
+              "reduce_over_trees": 0.125885009765625,
+              "reduce_over_actions": 0.3254413604736328,
+              "mean_loop": 4.305320024079998,
+              "mean_select": 0.08783960096191827,
+              "mean_expand": 0.21691412605640195,
+              "mean_playout": 3.7889480590820312,
+              "mean_backup": 0.20597149295774056
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.850865271359971,
+              "max_depth": 9,
+              "mean_size": 5518.5,
+              "max_size": 5692
+            }
+          },
+          "white_best_action_info": {
+            "index": 30,
+            "name": "D4",
+            "n_root": 502,
+            "win_flag": false,
+            "n": 100,
+            "n_wins": 30,
+            "q": 0.3,
+            "ucb": 0.7987424232884838
+          },
+          "white_performance_info": {
+            "steps": 502,
+            "steps_per_second": 501.2187099633835,
+            "playouts": 502,
+            "playouts_per_second": 501.2187099633835,
+            "times_[ms]": {
+              "total": 1001.558780670166,
+              "loop": 1001.3961791992188,
+              "reduce_over_actions": 0.0286102294921875,
+              "mean_loop": 1.9948131059745393,
+              "mean_select": 0.05974950068500413,
+              "mean_expand": 0.24860741132759004,
+              "mean_playout": 1.6827041884342513,
+              "mean_backup": 0.0018641293286327347
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 502,
+              "mean_depth": 3.986292283882379,
+              "max_depth": 5,
+              "size": 4523
+            }
+          }
+        },
+        "4": {
+          "black_best_action_info": {
+            "index": 10,
+            "name": "B2",
+            "n_root": 5908992,
+            "win_flag": false,
+            "n": 1932032,
+            "n_wins": 481931,
+            "q": 0.24944255581688088,
+            "ucb": 0.2551241937372655
+          },
+          "black_performance_info": {
+            "steps": 1163,
+            "steps_per_second": 232.53393720636961,
+            "playouts": 5908992,
+            "playouts_per_second": 1181462.746931161,
+            "times_[ms]": {
+              "total": 5001.420497894287,
+              "loop": 5000.2851486206055,
+              "reduce_over_trees": 0.16021728515625,
+              "reduce_over_actions": 0.29277801513671875,
+              "mean_loop": 4.299471322975585,
+              "mean_select": 0.08703426154440883,
+              "mean_expand": 0.20943175895605637,
+              "mean_playout": 3.8030684660553216,
+              "mean_backup": 0.1961740049327742
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.718357446071212,
+              "max_depth": 9,
+              "mean_size": 5771.5,
+              "max_size": 5802
+            }
+          },
+          "white_best_action_info": {
+            "index": 14,
+            "name": "F2",
+            "n_root": 507,
+            "win_flag": false,
+            "n": 10,
+            "n_wins": 7,
+            "q": 0.7,
+            "ucb": 2.278418322700441
+          },
+          "white_performance_info": {
+            "steps": 507,
+            "steps_per_second": 506.4572340805073,
+            "playouts": 507,
+            "playouts_per_second": 506.4572340805073,
+            "times_[ms]": {
+              "total": 1001.0716915130615,
+              "loop": 1000.7989406585693,
+              "reduce_over_actions": 0.1926422119140625,
+              "mean_loop": 1.9739624076105904,
+              "mean_select": 0.17066020702234153,
+              "mean_expand": 0.27340450700688407,
+              "mean_playout": 1.5264831821358886,
+              "mean_backup": 0.0016661085320647652
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 507,
+              "mean_depth": 2.8502155172413794,
+              "max_depth": 4,
+              "size": 6496
+            }
+          }
+        },
+        "5": {
+          "black_best_action_info": {
+            "index": 43,
+            "name": "H5",
+            "n_root": 6281984,
+            "win_flag": false,
+            "n": 3019008,
+            "n_wins": 860248,
+            "q": 0.28494392860171286,
+            "ucb": 0.2894979952384884
+          },
+          "black_performance_info": {
+            "steps": 1218,
+            "steps_per_second": 243.49946070526852,
+            "playouts": 6281984,
+            "playouts_per_second": 1255878.2562882805,
+            "times_[ms]": {
+              "total": 5002.06446647644,
+              "loop": 5000.6701946258545,
+              "reduce_over_trees": 0.13566017150878906,
+              "reduce_over_actions": 0.2868175506591797,
+              "mean_loop": 4.105640553880012,
+              "mean_select": 0.08676009029394692,
+              "mean_expand": 0.2134378711969786,
+              "mean_playout": 3.5932424228962616,
+              "mean_backup": 0.20806405736112046
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.646929018021331,
+              "max_depth": 9,
+              "mean_size": 6117.75,
+              "max_size": 6235
+            }
+          },
+          "white_best_action_info": {
+            "index": 8,
+            "name": "I1",
+            "n_root": 537,
+            "win_flag": false,
+            "n": 11,
+            "n_wins": 6,
+            "q": 0.5454545454545454,
+            "ucb": 2.057346568355756
+          },
+          "white_performance_info": {
+            "steps": 537,
+            "steps_per_second": 536.211721069309,
+            "playouts": 537,
+            "playouts_per_second": 536.211721069309,
+            "times_[ms]": {
+              "total": 1001.4700889587402,
+              "loop": 1001.1875629425049,
+              "reduce_over_actions": 0.1785755157470703,
+              "mean_loop": 1.8644088695391152,
+              "mean_select": 0.16436097342208777,
+              "mean_expand": 0.25974572037851346,
+              "mean_playout": 1.437128145157514,
+              "mean_backup": 0.001517532036069163
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 537,
+              "mean_depth": 2.887662025924148,
+              "max_depth": 4,
+              "size": 6249
+            }
+          }
+        },
+        "6": {
+          "black_best_action_info": {
+            "index": 17,
+            "name": "I2",
+            "n_root": 1829120,
+            "win_flag": false,
+            "n": 1407232,
+            "n_wins": 901880,
+            "q": 0.640889348735674,
+            "ucb": 0.6472914113748842
+          },
+          "black_performance_info": {
+            "steps": 1247,
+            "steps_per_second": 249.31849290907934,
+            "playouts": 1829120,
+            "playouts_per_second": 365704.44406564167,
+            "times_[ms]": {
+              "total": 5001.63459777832,
+              "loop": 5000.209093093872,
+              "reduce_over_trees": 0.13399124145507812,
+              "reduce_over_actions": 0.3304481506347656,
+              "mean_loop": 4.009790772328686,
+              "mean_select": 0.09736655326298742,
+              "mean_expand": 0.21906652351140785,
+              "mean_playout": 3.4753226622066786,
+              "mean_backup": 0.21439948460533798
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.026937146657798,
+              "max_depth": 7,
+              "mean_size": 751.75,
+              "max_size": 833
+            }
+          },
+          "white_best_action_info": {
+            "index": 53,
+            "name": "I6",
+            "n_root": 591,
+            "win_flag": false,
+            "n": 90,
+            "n_wins": 35,
+            "q": 0.3888888888888889,
+            "ucb": 0.9214640173358255
+          },
+          "white_performance_info": {
+            "steps": 591,
+            "steps_per_second": 590.1525438376583,
+            "playouts": 591,
+            "playouts_per_second": 590.1525438376583,
+            "times_[ms]": {
+              "total": 1001.4359951019287,
+              "loop": 1001.3444423675537,
+              "reduce_over_actions": 0.041961669921875,
+              "mean_loop": 1.6943222375085512,
+              "mean_select": 0.06138935508663481,
+              "mean_expand": 0.2554221403376907,
+              "mean_playout": 1.3739094516347508,
+              "mean_backup": 0.001794392283999577
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 591,
+              "mean_depth": 3.9705060540204906,
+              "max_depth": 5,
+              "size": 6442
+            }
+          }
+        },
+        "7": {
+          "black_best_action_info": {
+            "index": 70,
+            "name": "H8",
+            "n_root": 4942848,
+            "win_flag": false,
+            "n": 3384832,
+            "n_wins": 1269652,
+            "q": 0.37510044811677506,
+            "ucb": 0.3793683202283122
+          },
+          "black_performance_info": {
+            "steps": 1276,
+            "steps_per_second": 255.07828405434933,
+            "playouts": 4942848,
+            "playouts_per_second": 988098.10829269,
+            "times_[ms]": {
+              "total": 5002.385854721069,
+              "loop": 5001.08528137207,
+              "reduce_over_trees": 0.12803077697753906,
+              "reduce_over_actions": 0.28586387634277344,
+              "mean_loop": 3.9193458317962935,
+              "mean_select": 0.09042958854507877,
+              "mean_expand": 0.20618909578712008,
+              "mean_playout": 3.4350336158537194,
+              "mean_backup": 0.18433922884232573
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.839323467230444,
+              "max_depth": 9,
+              "mean_size": 4493.5,
+              "max_size": 5507
+            }
+          },
+          "white_best_action_info": {
+            "index": 15,
+            "name": "G2",
+            "n_root": 581,
+            "win_flag": false,
+            "n": 14,
+            "n_wins": 9,
+            "q": 0.6428571428571429,
+            "ucb": 1.9913749277763495
+          },
+          "white_performance_info": {
+            "steps": 581,
+            "steps_per_second": 580.0472922810259,
+            "playouts": 581,
+            "playouts_per_second": 580.0472922810259,
+            "times_[ms]": {
+              "total": 1001.6424655914307,
+              "loop": 1001.3778209686279,
+              "reduce_over_actions": 0.16236305236816406,
+              "mean_loop": 1.7235418605312012,
+              "mean_select": 0.15576530036335354,
+              "mean_expand": 0.24445413927613355,
+              "mean_playout": 1.320085098739335,
+              "mean_backup": 0.0015692128166684596
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 581,
+              "mean_depth": 2.9647223192455465,
+              "max_depth": 4,
+              "size": 5726
+            }
+          }
+        },
+        "8": {
+          "black_best_action_info": {
+            "index": 37,
+            "name": "B5",
+            "n_root": 5412096,
+            "win_flag": false,
+            "n": 2770176,
+            "n_wins": 794411,
+            "q": 0.2867727537889289,
+            "ucb": 0.29150426913804833
+          },
+          "black_performance_info": {
+            "steps": 1247,
+            "steps_per_second": 249.2122309464843,
+            "playouts": 5412096,
+            "playouts_per_second": 1081604.2648408532,
+            "times_[ms]": {
+              "total": 5003.767251968384,
+              "loop": 5002.600193023682,
+              "reduce_over_trees": 0.13065338134765625,
+              "reduce_over_actions": 0.3075599670410156,
+              "mean_loop": 4.011708254229095,
+              "mean_select": 0.09013713601119248,
+              "mean_expand": 0.21024255056618305,
+              "mean_playout": 3.509843837000794,
+              "mean_backup": 0.19773236254070314
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.5741948329931805,
+              "max_depth": 9,
+              "mean_size": 5022.25,
+              "max_size": 5275
+            }
+          },
+          "white_best_action_info": {
+            "index": 29,
+            "name": "C4",
+            "n_root": 588,
+            "win_flag": false,
+            "n": 13,
+            "n_wins": 7,
+            "q": 0.5384615384615384,
+            "ucb": 1.9392005684463012
+          },
+          "white_performance_info": {
+            "steps": 588,
+            "steps_per_second": 587.5303179845328,
+            "playouts": 588,
+            "playouts_per_second": 587.5303179845328,
+            "times_[ms]": {
+              "total": 1000.7994174957275,
+              "loop": 1000.5695819854736,
+              "reduce_over_actions": 0.1621246337890625,
+              "mean_loop": 1.7016489489548872,
+              "mean_select": 0.15705986087825022,
+              "mean_expand": 0.23666490502908927,
+              "mean_playout": 1.3044265662731767,
+              "mean_backup": 0.0016543329978475766
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 588,
+              "mean_depth": 3.0242045676361506,
+              "max_depth": 4,
+              "size": 5123
+            }
+          }
+        },
+        "9": {
+          "black_best_action_info": {
+            "index": 25,
+            "name": "H3",
+            "n_root": 1441792,
+            "win_flag": false,
+            "n": 700416,
+            "n_wins": 366091,
+            "q": 0.5226765236659356,
+            "ucb": 0.5316758806416997
+          },
+          "black_performance_info": {
+            "steps": 1321,
+            "steps_per_second": 264.01033422015377,
+            "playouts": 1441792,
+            "playouts_per_second": 288151.3912157032,
+            "times_[ms]": {
+              "total": 5003.592014312744,
+              "loop": 5002.287864685059,
+              "reduce_over_trees": 0.15020370483398438,
+              "reduce_over_actions": 0.4909038543701172,
+              "mean_loop": 3.786743273796411,
+              "mean_select": 0.08527624345385243,
+              "mean_expand": 0.20667443575054115,
+              "mean_playout": 3.3021025545754097,
+              "mean_backup": 0.18921465155394307
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 3.4560357675111772,
+              "max_depth": 5,
+              "mean_size": 167.75,
+              "max_size": 212
+            }
+          },
+          "white_best_action_info": {
+            "index": 77,
+            "name": "F9",
+            "n_root": 674,
+            "win_flag": false,
+            "n": 105,
+            "n_wins": 41,
+            "q": 0.3904761904761905,
+            "ucb": 0.8885957060989759
+          },
+          "white_performance_info": {
+            "steps": 674,
+            "steps_per_second": 673.6044426578841,
+            "playouts": 674,
+            "playouts_per_second": 673.6044426578841,
+            "times_[ms]": {
+              "total": 1000.5872249603271,
+              "loop": 1000.495195388794,
+              "reduce_over_actions": 0.04458427429199219,
+              "mean_loop": 1.4844142364818902,
+              "mean_select": 0.06933665063331672,
+              "mean_expand": 0.23215425474353643,
+              "mean_playout": 1.1797092788651011,
+              "mean_backup": 0.0016066723832037046
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 674,
+              "mean_depth": 4.0074198988195615,
+              "max_depth": 5,
+              "size": 5930
+            }
+          }
+        },
+        "10": {
+          "black_best_action_info": {
+            "index": 79,
+            "name": "H9",
+            "n_root": 4327424,
+            "win_flag": false,
+            "n": 1395968,
+            "n_wins": 607140,
+            "q": 0.4349240097194205,
+            "ucb": 0.44154100470060065
+          },
+          "black_performance_info": {
+            "steps": 1301,
+            "steps_per_second": 259.8893574465221,
+            "playouts": 4327424,
+            "playouts_per_second": 864451.5317130351,
+            "times_[ms]": {
+              "total": 5005.976438522339,
+              "loop": 5003.214359283447,
+              "reduce_over_trees": 0.13256072998046875,
+              "reduce_over_actions": 0.3159046173095703,
+              "mean_loop": 3.8456682238919657,
+              "mean_select": 0.08841151003650663,
+              "mean_expand": 0.20274962030127816,
+              "mean_playout": 3.366597884439854,
+              "mean_backup": 0.18289014067125722
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.615255549819309,
+              "max_depth": 8,
+              "mean_size": 3874.0,
+              "max_size": 5038
+            }
+          },
+          "white_best_action_info": {
+            "index": 57,
+            "name": "D7",
+            "n_root": 728,
+            "win_flag": false,
+            "n": 117,
+            "n_wins": 43,
+            "q": 0.36752136752136755,
+            "ucb": 0.8421890802901906
+          },
+          "white_performance_info": {
+            "steps": 728,
+            "steps_per_second": 727.8828599618735,
+            "playouts": 728,
+            "playouts_per_second": 727.8828599618735,
+            "times_[ms]": {
+              "total": 1000.1609325408936,
+              "loop": 1000.0011920928955,
+              "reduce_over_actions": 0.032901763916015625,
+              "mean_loop": 1.3736280111166148,
+              "mean_select": 0.06643068659436571,
+              "mean_expand": 0.22790621925186325,
+              "mean_playout": 1.0760727819505629,
+              "mean_backup": 0.0016132553855141441
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 728,
+              "mean_depth": 4.132592100896117,
+              "max_depth": 5,
+              "size": 6026
+            }
+          }
+        },
+        "11": {
+          "black_best_action_info": {
+            "index": 20,
+            "name": "C3",
+            "n_root": 5062656,
+            "win_flag": false,
+            "n": 1395200,
+            "n_wins": 440478,
+            "q": 0.3157095756880734,
+            "ucb": 0.32236228987790316
+          },
+          "black_performance_info": {
+            "steps": 1242,
+            "steps_per_second": 248.32128182022376,
+            "playouts": 5062656,
+            "playouts_per_second": 1012210.3279668654,
+            "times_[ms]": {
+              "total": 5001.585006713867,
+              "loop": 5000.092267990112,
+              "reduce_over_trees": 0.13256072998046875,
+              "reduce_over_actions": 0.30994415283203125,
+              "mean_loop": 4.025839185177224,
+              "mean_select": 0.08419573594982498,
+              "mean_expand": 0.20848975281400572,
+              "mean_playout": 3.539809666202072,
+              "mean_backup": 0.18910835714539853
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.775025278058645,
+              "max_depth": 7,
+              "mean_size": 4945.0,
+              "max_size": 4981
+            }
+          },
+          "white_best_action_info": {
+            "index": 78,
+            "name": "G9",
+            "n_root": 772,
+            "win_flag": false,
+            "n": 141,
+            "n_wins": 52,
+            "q": 0.36879432624113473,
+            "ucb": 0.8031025982991371
+          },
+          "white_performance_info": {
+            "steps": 772,
+            "steps_per_second": 771.4737657442583,
+            "playouts": 772,
+            "playouts_per_second": 771.4737657442583,
+            "times_[ms]": {
+              "total": 1000.6821155548096,
+              "loop": 1000.572919845581,
+              "reduce_over_actions": 0.030994415283203125,
+              "mean_loop": 1.296078911717074,
+              "mean_select": 0.060539789150415926,
+              "mean_expand": 0.24113692150214794,
+              "mean_playout": 0.9910232662536937,
+              "mean_backup": 0.0017344025132569624
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 772,
+              "mean_depth": 4.477403781681641,
+              "max_depth": 6,
+              "size": 7457
+            }
+          }
+        },
+        "12": {
+          "black_best_action_info": {
+            "index": 64,
+            "name": "B8",
+            "n_root": 4354048,
+            "win_flag": false,
+            "n": 3131648,
+            "n_wins": 1300636,
+            "q": 0.41531998487697214,
+            "ucb": 0.4197387326371287
+          },
+          "black_performance_info": {
+            "steps": 1304,
+            "steps_per_second": 260.69813992697897,
+            "playouts": 4354048,
+            "playouts_per_second": 870469.4898410912,
+            "times_[ms]": {
+              "total": 5001.953601837158,
+              "loop": 5000.444650650024,
+              "reduce_over_trees": 0.15687942504882812,
+              "reduce_over_actions": 0.5958080291748047,
+              "mean_loop": 3.8346968179831475,
+              "mean_select": 0.09338274323867142,
+              "mean_expand": 0.2103851982420939,
+              "mean_playout": 3.3353963878257145,
+              "mean_backup": 0.19072809833690432
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 4.809574824238366,
+              "max_depth": 9,
+              "mean_size": 3733.75,
+              "max_size": 4237
+            }
+          },
+          "white_best_action_info": {
+            "index": 23,
+            "name": "F3",
+            "n_root": 765,
+            "win_flag": false,
+            "n": 25,
+            "n_wins": 15,
+            "q": 0.6,
+            "ucb": 1.6307182609288757
+          },
+          "white_performance_info": {
+            "steps": 765,
+            "steps_per_second": 764.1883137374639,
+            "playouts": 765,
+            "playouts_per_second": 764.1883137374639,
+            "times_[ms]": {
+              "total": 1001.0621547698975,
+              "loop": 1000.6020069122314,
+              "reduce_over_actions": 0.4036426544189453,
+              "mean_loop": 1.307976479623832,
+              "mean_select": 0.1411684198317185,
+              "mean_expand": 0.22211978638094235,
+              "mean_playout": 0.9415361616346571,
+              "mean_backup": 0.0015751209134369894
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 765,
+              "mean_depth": 3.368917066483893,
+              "max_depth": 4,
+              "size": 5836
+            }
+          }
+        },
+        "13": {
+          "black_best_action_info": {
+            "index": 61,
+            "name": "H7",
+            "n_root": 1687552,
+            "win_flag": false,
+            "n": 1427200,
+            "n_wins": 913595,
+            "q": 0.6401310257847533,
+            "ucb": 0.6464703625282721
+          },
+          "black_performance_info": {
+            "steps": 1358,
+            "steps_per_second": 271.34469311311204,
+            "playouts": 1687552,
+            "playouts_per_second": 337193.1366365379,
+            "times_[ms]": {
+              "total": 5004.704475402832,
+              "loop": 5003.387451171875,
+              "reduce_over_trees": 0.1308917999267578,
+              "reduce_over_actions": 0.2963542938232422,
+              "mean_loop": 3.684379566400497,
+              "mean_select": 0.08824788066880868,
+              "mean_expand": 0.20822439348223634,
+              "mean_playout": 3.1970009010213816,
+              "mean_backup": 0.18701110918497302
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 3.8668122270742358,
+              "max_depth": 6,
+              "mean_size": 458.0,
+              "max_size": 484
+            }
+          },
+          "white_best_action_info": {
+            "index": 5,
+            "name": "F1",
+            "n_root": 1054,
+            "win_flag": false,
+            "n": 552,
+            "n_wins": 405,
+            "q": 0.7336956521739131,
+            "ucb": 0.9582781590278354
+          },
+          "white_performance_info": {
+            "steps": 1054,
+            "steps_per_second": 1053.3329876863254,
+            "playouts": 1054,
+            "playouts_per_second": 1053.3329876863254,
+            "times_[ms]": {
+              "total": 1000.6332397460938,
+              "loop": 1000.546932220459,
+              "reduce_over_actions": 0.034809112548828125,
+              "mean_loop": 0.9492855144406632,
+              "mean_select": 0.07972454888997087,
+              "mean_expand": 0.25953626723171863,
+              "mean_playout": 0.6067467821617054,
+              "mean_backup": 0.0017112301241966985
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 1054,
+              "mean_depth": 4.784616464313285,
+              "max_depth": 6,
+              "size": 14249
+            }
+          }
+        },
+        "14": {
+          "black_best_action_info": {
+            "index": 26,
+            "name": "I3",
+            "n_root": 1421568,
+            "win_flag": false,
+            "n": 1048576,
+            "n_wins": 416843,
+            "q": 0.39753246307373047,
+            "ucb": 0.4048839153193402
+          },
+          "black_performance_info": {
+            "steps": 1369,
+            "steps_per_second": 273.6339004729738,
+            "playouts": 1421568,
+            "playouts_per_second": 284141.1224452625,
+            "times_[ms]": {
+              "total": 5003.035068511963,
+              "loop": 5001.430034637451,
+              "reduce_over_trees": 0.15425682067871094,
+              "reduce_over_actions": 0.39005279541015625,
+              "mean_loop": 3.653345532971111,
+              "mean_select": 0.0849478953593486,
+              "mean_expand": 0.2189513276840667,
+              "mean_playout": 3.140116887339891,
+              "mean_backup": 0.20524339139505057
+            },
+            "trees": {
+              "count": 4,
+              "mean_depth": 2.5033112582781456,
+              "max_depth": 4,
+              "mean_size": 37.75,
+              "max_size": 39
+            }
+          },
+          "white_best_action_info": {
+            "index": 67,
+            "name": "E8",
+            "n_root": 925,
+            "win_flag": true,
+            "n": 45,
+            "n_wins": 45,
+            "q": 1.0,
+            "ucb": 1.7791615857238927
+          },
+          "white_performance_info": {
+            "steps": 925,
+            "steps_per_second": 924.1017430290391,
+            "playouts": 925,
+            "playouts_per_second": 924.1017430290391,
+            "times_[ms]": {
+              "total": 1000.9720325469971,
+              "loop": 1000.8177757263184,
+              "reduce_over_actions": 0.10395050048828125,
+              "mean_loop": 1.0819651629473712,
+              "mean_select": 0.3302197842984586,
+              "mean_expand": 0.2622882739917652,
+              "mean_playout": 0.48642751332875844,
+              "mean_backup": 0.0015421171446104308
+            },
+            "tree": {
+              "initial_n_root": 0,
+              "initial_mean_depth": 0.0,
+              "initial_max_depth": 0,
+              "initial_size": 1,
+              "n_root": 925,
+              "mean_depth": 3.5640949774391597,
+              "max_depth": 5,
+              "size": 13519
+            }
+          }
+        }
+      },
+      "outcome": 
