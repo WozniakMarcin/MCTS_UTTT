@@ -125,10 +125,10 @@ def take_action_uttt(m, n, board, extra_info, turn, action):
     j0=bj*3
     b=bi*3+bj
 
-    if extra_info[nb]!= -2:
-        extra_info[-1] = -2
-    else:
-        extra_info[-1] = nb
+    # if extra_info[nb]!= -2:
+    #     extra_info[-1] = -2
+    # else:
+    #     extra_info[-1] = nb
     
     
     board[i, j] = turn
@@ -162,8 +162,14 @@ def take_action_uttt(m, n, board, extra_info, turn, action):
     if sum_of_non_zero==9:
         extra_info[b]=0
     
-    if extra_info[b] != -2 and nb == b:
-        extra_info[-1] = -2
+    # if extra_info[b] != -2 and nb == b:
+    #     extra_info[-1] = -2
+    # forced board AFTER updating subboards
+    if extra_info[nb] == -2:
+        extra_info[9] = nb
+    else:
+        extra_info[9] = -2
+
     
     turn *= -1
 
@@ -171,7 +177,7 @@ def take_action_uttt(m, n, board, extra_info, turn, action):
 @cuda.jit(device=True)
 def legal_actions_playout_uttt(m, n, board, extra_info, turn, legal_actions_with_count):
     count = 0
-    forced = extra_info[-1]
+    forced = extra_info[9]
 
     if forced == -2:
         # można grać w każdej OTWARTEJ subplanszy
@@ -207,7 +213,7 @@ def legal_actions_playout_uttt(m, n, board, extra_info, turn, legal_actions_with
                     legal_actions_with_count[count] = action
                     count += 1
 
-    # na końcu zapisujemy liczność (jak u Ciebie)
+
     legal_actions_with_count[-1] = count
 
 @cuda.jit(device=True)
@@ -226,10 +232,10 @@ def take_action_playout_uttt(m, n, board, extra_info, turn, action, action_ord, 
     j0=bj*3
     b=bi*3+bj
 
-    if extra_info[nb]!= -2:
-        extra_info[-1] = -2
-    else:
-        extra_info[-1] = nb
+    # if extra_info[nb]!= -2:
+    #     extra_info[-1] = -2
+    # else:
+    #     extra_info[-1] = nb
     
     
     board[i, j] = turn
@@ -262,8 +268,14 @@ def take_action_playout_uttt(m, n, board, extra_info, turn, action, action_ord, 
     if sum_of_non_zero==9:
         extra_info[b]=0
     
-    if extra_info[b] != -2 and nb == b:
-        extra_info[-1] = -2   
+    # if extra_info[b] != -2 and nb == b:
+    #     extra_info[-1] = -2 
+    # # forced board AFTER updating subboards
+    if extra_info[nb] == -2:
+        extra_info[9] = nb
+    else:
+        extra_info[9] = -2
+  
 
     legal_actions_with_count[-1] = 0     
 

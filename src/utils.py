@@ -16,6 +16,7 @@ import zipfile as zf
 import os
 import json
 import sys
+import numpy as np
  
 __author__ = "Przemysław Klęsk"
 __email__ = "pklesk@zut.edu.pl"
@@ -162,7 +163,7 @@ def save_and_zip_experiment(experiment_hs, experiment_info, folder):
     fpath = folder + experiment_hs    
     try:        
         f = open(fpath + ".json", "w+")
-        json.dump(experiment_info, f, indent=2)
+        json.dump(experiment_info, f, indent=2,default=lambda o: o.item() if isinstance(o, np.generic) else o)
         f.close()
         with zf.ZipFile(fpath + ".zip", mode="w", compression=zf.ZIP_DEFLATED) as archive:
                 archive.write(fpath + ".json", arcname=experiment_hs + ".json")

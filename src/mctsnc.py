@@ -2322,6 +2322,14 @@ class MCTSNC:
                 if (shared_actions_win_flags[a] < shared_actions_win_flags[a_stride]) or\
                  ((shared_actions_win_flags[a] == shared_actions_win_flags[a_stride]) and (shared_actions_ns[a] < shared_actions_ns[a_stride])) or\
                  ((shared_actions_win_flags[a] == shared_actions_win_flags[a_stride]) and (shared_actions_ns[a] == shared_actions_ns[a_stride]) and (shared_actions_ns_wins[a] < shared_actions_ns_wins[a_stride])):
+                # if (shared_actions_win_flags[a] < shared_actions_win_flags[a_stride]) or\
+                #     ((shared_actions_win_flags[a] == shared_actions_win_flags[a_stride]) and
+                #     (shared_actions_ns[a] > 0) and (shared_actions_ns[a_stride] > 0) and
+                #     (shared_actions_ns_wins[a] * shared_actions_ns[a_stride] < shared_actions_ns_wins[a_stride] * shared_actions_ns[a])) or\
+                #     ((shared_actions_win_flags[a] == shared_actions_win_flags[a_stride]) and
+                #     (shared_actions_ns_wins[a] * shared_actions_ns[a_stride] == shared_actions_ns_wins[a_stride] * shared_actions_ns[a]) and
+                #     (shared_actions_ns[a] < shared_actions_ns[a_stride])):
+
                     shared_actions[a] = shared_actions[a_stride]                                
                     shared_actions_ns[a] = shared_actions_ns[a_stride]
                     shared_actions_ns_wins[a] = shared_actions_ns_wins[a_stride]                    
